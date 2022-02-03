@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="selections">
+        <button class="selection" data-choice="Rock">✊</button>
+        <button class="selection" data-choice="Paper">✋</button>
+        <button class="selection" data-choice="Scissor">✌️</button>
+    </div>
+    <div class="reset"><button onclick="doReset()" id="reset">Reset</button></div>
+    <div class="change"><button onclick="changeBatting()" id="changeBatting">Change Batting</button></div>
+    <div class="scores">
+        <div class="score">Score: <span id='yourTotalScore'></span></div>
+        <div class="score">Score: <span id='botTotalScore'></span></div>
+    </div>
+    <div class="results">
+        <div>
+            You: <span class="result-score" data-yourScore>0</span><span id='youOut'>Out</span>
+        </div>
+        <div data-final-column>
+            Bot: <span class="result-score" data-botScore>0</span><span id='botOut'>Out</span>
+        </div>
+        <!-- <div class="choice-selected winner">✊</div>
+        <div class="choice-selected">✌️</div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

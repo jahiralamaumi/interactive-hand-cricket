@@ -1,0 +1,74 @@
+body{
+    background: #ccc;
+}
+.selections{
+    display: flex;
+    justify-content: center;
+}
+.selection{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 100ms;
+}
+.selection:hover{
+    transform: scale(1.2);
+}
+.results, .scores {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+.result-score{
+    margin-left: 12px;
+    font-size: 2rem;
+}
+#youOut, #botOut{
+    display: none;
+    margin-left: 12px;
+    font-size: 2rem;
+}
+.scorex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: darkred;
+    padding: 12px 24px;
+    border: 3px solid lightsteelblue;
+}
+.choice-selected{
+    font-size: 3.5rem;
+}
+
+.reset, .change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.reset button, .change button{
+    font-size: 1.5rem;
+    padding: 10px 24px;
+    background: darkolivegreen;
+    color: darksalmon;
+    border-radius: 5px;
+    border: 2px solid darksalmon;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.reset button:hover, .change button:hover{
+    background: transparent;
+    color: darkolivegreen;
+}
